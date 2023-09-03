@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/myData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘의 상태를 기록해주세요"
+        android:textSize="15dp"
+       />
+
+    <TextView
+        android:id="@+id/expl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아토피 상태, 가려움 정도, 사용한 보습제, 복용한 약, 수면 시간, 음주 및 흡연 여부를 적어주세요"
+        android:textSize="15dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <EditText
+        android:id="@+id/add_editView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/chartdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘 상태의 점수를 주세요"
+        android:textSize="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radio_button_group"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
